@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  font-style: italic; /* Añadido para establecer la cursiva como estilo de la fuente del cuerpo */
+}
+
+h1,
+h2,
+p {
+  font-style: italic; /* Añadido para establecer la cursiva como estilo de la fuente para encabezados y párrafos */
+}
+
+.app {
+  text-align: center;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.countdown-section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  overflow: hidden; /* Oculta las esquinas redondeadas que se extienden más allá del contenedor */
+}
+
+.countdown-section h2 {
+  margin-bottom: 10px;
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.countdown-box {
+  border: 2px solid #000; /* Borde negro de 2 píxeles */
+  border-radius: 10px; /* Bordes redondos */
+  overflow: hidden; /* Ocultar el contenido que sobresale del borde redondo */
+  margin: 5px; /* Espaciado entre las secciones del contador */
+}
+
+.countdown-box:first-child {
+  border-top-left-radius: 0; /* La mitad superior izquierda no es redonda */
+  border-bottom-left-radius: 0; /* La mitad inferior izquierda no es redonda */
+}
+
+.countdown-box:last-child {
+  border-top-right-radius: 0; /* La mitad superior derecha no es redonda */
+  border-bottom-right-radius: 0; /* La mitad inferior derecha no es redonda */
+}
+
+.countdown-digit {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.countdown-label {
+  font-size: 0.8em;
+}
+.cover-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.envelope {
+  width: 150px;
+  height: 100px;
+  cursor: pointer;
+  perspective: 1000px;
+  transition: transform 0.5s ease;
+}
+
+.envelope-cover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.envelope:hover .envelope-cover {
+  transform: rotateY(-180deg);
+}
+
+.envelope-front,
+.envelope-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  backface-visibility: hidden;
+}
+
+.envelope-back {
+  background-color: #e0e0e0;
+  transform: rotateY(180deg);
+}
+
+/* ... Otros estilos ... */
+
+
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
